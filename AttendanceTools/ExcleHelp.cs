@@ -20,6 +20,7 @@ namespace AttendanceTools
     {
         public static byte[] ToExcelDataFromList<T>(string fileName, List<T> list, List<string> topHeader, List<string> excludeNames)
         {
+
             var wBook = new NPOI.HSSF.UserModel.HSSFWorkbook();
             var wSheet = wBook.CreateSheet(fileName);
             var type = typeof(T);
